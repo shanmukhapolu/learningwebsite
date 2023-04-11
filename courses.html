@@ -65,6 +65,84 @@
       font-size:50px;
     }
 
+    
+.card {
+  width: 700px;
+  user-select: none;
+  height: 260px;
+  margin:50px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: aqua;
+  border-radius: 5px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.card .card_header 
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card .card_header h1 {
+  font-size: 25px;
+  color: #0a253f;
+}
+
+.card .card_header p {
+  font-size: 16px;
+  padding: 10px 20px 0 0;
+  color: #4a4970;
+}
+
+.card .content-image .fa {
+  padding: 7px 10px;
+  font-size: 25px;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #025aa5;
+}
+
+.card_info {
+    color: #0a253f;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top:-10px;
+}
+
+.card_info p{
+    margin:25px 10px;
+}
+.card_info span{
+    color: #4a4970;
+    margin-right: 10px;
+}
+
+.card .card_footer{
+    padding: 15px 20px;
+    align-items: center;
+    background-color: #F0F4F7;
+    display: flex;
+
+}
+
+.card .card_footer .btn{
+    width: 100px;
+    font-size: 16px;
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #025aa5;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card_footer button span{
+    margin-left:10px;
+}
+
   </style>
 </head>
 <body>
@@ -80,6 +158,29 @@
   <div>
     <h1 id="course-page-title" >Courses</h1>
   </div>
+
+  <div class="card">
+    <div class="card_header">
+       <div class="content">
+        <h1>Beginner's Guide to HTML</h1>
+        <p>
+            learn what is frontend developement and how its works
+        </p>
+       </div>
+       <div class="content-image">
+        <span class="fa fa-html5"></span>
+    </div>
+    </div>
+    <div class="card_info">
+        <p><span class="fa fa-users"></span>Beginner</p>
+    <p style="margin-top:-15px;"><span class="fa fa-users"></span>Approx. 2 hours</p>
+    </div>
+
+    <div class="card_footer">
+            <button class="btn">Start<span class="fa fa-long-arrow-right"></span></button>
+    </div>
+</div>
+
 </body>
   <script></script>
 </html>
