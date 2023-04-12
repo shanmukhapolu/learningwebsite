@@ -9,7 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
   <style>
-     nav {
+
+    nav {
       padding:10px;
       margin:-8px;
       background-color:lightskyblue;
@@ -53,7 +54,9 @@
       margin-top:0px;
     }
     
-    
+    #contact-section {
+      background: linear-gradient(90deg, rgba(69,58,255,1) 0%, rgba(58,251,255,1) 100%);
+    }
 
   </style>
 </head>
@@ -68,8 +71,15 @@
   </nav>
 
 
-  <div>
-    <h1>Contact Page</h1>
+  <div id="contact-section">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name">
+      <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email">
+      <input type="text" placeholder="Subject">
+      <input type="text" placeholder="Message">
+      <input type="button" placeholder="Submit">
+    </form>
   </div>
 </body>
   <script></script>
