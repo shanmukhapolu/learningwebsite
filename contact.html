@@ -91,6 +91,51 @@
       margin-left:40px;
       font-size:40px;
     }
+
+
+#about-dropdown {
+  float: left;
+  overflow: hidden;
+  font-family:DM Sans;
+}
+
+#about {
+  margin-top:-5px;
+}
+
+#about-dropdown #about {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+#about-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  min-width: 140px;
+  box-shadow: 0px 0px 3px rgb(150,150,150);
+  z-index: 1;
+  margin-top:5px;
+}
+
+#about-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#about-dropdown:hover #about-content {
+  display: block;
+}
+
   </style>
 </head>
 <body>
@@ -98,7 +143,18 @@
     <img id="logo" src="https://i.postimg.cc/VvspX90k/Screenshot-2023-03-12-120220-removebg-preview.png" />
     <a href="index" id="title">Learn World</a>
     <a href="index" class="nav-links">Home</a>
-    <a href="about" class="nav-links">About</a>
+
+    <div id="about-dropdown">
+      <button src="about" id="about">About 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="about-content">
+        <a id="who-we-are" href="#">Who We Are</a>
+        <a id="volunteer" href="#">Volunteer</a>
+        <a id="partner" href="#">Partner</a>
+      </div>
+    </div> 
+
     <a href="courses" class="nav-links">Courses</a>
     <a href="contact" class="nav-links">Contact</a>
   </nav>
