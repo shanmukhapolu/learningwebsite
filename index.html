@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
      nav {
       padding:10px;
@@ -57,6 +58,45 @@
       font-family:Manrope;
       padding:25px;
     }
+
+    
+#about-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+#about-dropdown #about {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+#about-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 117px;
+  box-shadow: 0px 0px 3px rgb(150,150,150);
+  z-index: 1;
+}
+
+#about-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#about-dropdown:hover #about-content {
+  display: block;
+}
   </style>
 </head>
 <body>
@@ -67,6 +107,16 @@
     <a href="about" class="nav-links">About</a>
     <a href="courses" class="nav-links">Courses</a>
     <a href="contact" class="nav-links">Contact</a>
+    <div id="about-dropdown">
+      <button id="about">Dropdown 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="about-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> 
   </nav>
 
   <h1 id="main-heading"> Welcome to the Learning Website.</h1>
